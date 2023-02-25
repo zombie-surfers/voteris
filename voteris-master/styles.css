@@ -1,0 +1,74 @@
+* {
+    font-family: 'Bauhaus 93', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Game styles */
+.grid {
+    display:grid;
+    grid-template-columns: 320px 200px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-board {
+    border: solid 2px;
+}
+
+.play-button {
+    /*margin:auto;*/
+    background-color: #B800FF;
+    font-size: 20px;
+    padding: 15px 15px;
+    cursor:pointer;
+}
+
+.play-button:hover {
+    cursor:grab;
+}
+
+
+.pause-button {
+    /*margin:auto;*/
+    background-color: #B800FF;
+    font-size: 20px;
+    padding: 15px 15px;
+    cursor:pointer;
+}
+
+/* Page Styles */
+.layout {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+
+    justify-content: center;
+  }
+  
+.grow1 { 
+    flex-grow: 1; 
+}
+
+#buttonarea {
+    display: grid;
+    place-items:center;
+    height: 100px;
+}
+h1 {
+    text-align:center;
+}
+
+h1, h2, h3, h4, p {
+    color: #169873;
+    text-align:center;
+}
+
+body {
+    background-color:black;
+}
+
+canvas .board {
+    background-color: white;
+}
