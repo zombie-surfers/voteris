@@ -18,23 +18,44 @@
 }
 
 .play-button {
-    cursor: pointer;
+    /*margin:auto;*/
     background-color: #B800FF;
     font-size: 20px;
-    padding: 15px 30px;
-
+    padding: 15px 15px;
+    cursor:pointer;
 }
+
+.play-button:hover {
+    cursor:grab;
+}
+
+
+.pause-button {
+    /*margin:auto;*/
+    background-color: #B800FF;
+    font-size: 20px;
+    padding: 15px 15px;
+    cursor:pointer;
+}
+
 /* Page Styles */
 .layout {
     width: 100%;
-  
     display: flex;
     gap: 16px;
 
     justify-content: center;
   }
   
-  .grow1 { flex-grow: 1; }
+.grow1 { 
+    flex-grow: 1; 
+}
+
+#buttonarea {
+    display: grid;
+    place-items:center;
+    height: 100px;
+}
 h1 {
     text-align:center;
 }

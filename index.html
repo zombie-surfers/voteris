@@ -5,26 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Voteris</title>
     <script src="pageScripts.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <h1>Voteris</h1>
     <section class="layout">
         <div class="grow1">
+            <h2>Zombies</h2>
+            <p>Zombies: <b id="zombies">0</b></p>
+            <p><b id="zombieVotes"></b> votes</p>
+            <p><b id="zVerdict">VERDICT</b></p>
+
             <canvas id = "leftBoard"></canvas>
             <p>Score: <b id="leftScore">0</b></p>
             <p>Lines: <b id="leftLines">0</b></p>
             <p>Level: <b id="leftLevel">0</b></p>
         </div>
-
-
         <div class="grow1">
+            <h2>Surfers</h2>
+            <p>Surfers: <b id = "surfers">0</b></p>
+            <p><b id="surferVotes"></b> votes</p>
+            <p><b id="sVerdict">VERDICT</b></p>
             <canvas id = "rightBoard"></canvas>
             <p>Score: <b id="rightScore">0</b></p>
             <p>Lines: <b id="rightLines">0</b></p>
             <p>Level: <b id="rightLevel">0</b></p>
         </div>
+        
       </section>
+      <div id="buttonarea">
+        <button onclick="playTetris()" id="play-button">Play</button>
+        <button onclick="pauseTetris()" id="pause-button">Pause</button>
+      </div>
 </body>
 </html>

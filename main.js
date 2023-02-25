@@ -12,5 +12,15 @@ rCtx.canvas.width = 1/2 * columns * block_size;
 lCtx.scale(block_size, block_size);
 rCtx.scale(block_size, block_size);
 
+let leftGameBoard = new Board();
+let rightGameBoard = new Board();
 
+function playTetris() {//Play method to play both of the boards
+    leftGameBoard.reset();
+    rightGameBoard.reset();
+}
+
+function pauseTetris() {
+    
+}
 
