@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tetronomeSelector.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="draw.js" defer></script>
+    <!-- <script src="drawShape.js" defer></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="timer">
+        <h1 id="time">5</h1>
+    </div>
+    <section>
+        <canvas id="position_canvas"></canvas>
+    </section>
+    <div class="slider">
+        <input type="range" min="0" max="9" step="1" list="values" id="sampleSlider" />
+    </div>
+    <div class="rotation_section">
+        <button id="rotate_left" onclick="rotate90Right()"> rotate left</button>
+        <button id="rotate_right" onclick="rotate90Left()"> rotate right</button>
+    </div>
+</body>
+</html>
